@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical documentation page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <nav id="navbar">
+            <header><h2>R Documentation</h2></header>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+              <ul>
+                <li><a class="nav-link" href="#Audience">Audience</a></li>
+                <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+                <li><a class="nav-link" href="#Evolution">Evolution</a></li>
+                <li><a class="nav-link" href="Features">Features</a></li>
+                <li><a class="nav-link" href="#Windows_installation">Windows installation</a></li>
+                <li><a class="nav-link" href="#Linux_installation">Linux installation</a></li>
+                <li><a class="nav-link" href="#Run_R_scripts">Run R scripts</a></li>
+                <li><a class="nav-link" href="#Data_stractures">Data stractures</a></li>
+                <li><a class="nav-link" href="#R_functions">R functions</a></li>
+                <li><a class="nav-link" href="#Data_visualization">Data visualization</a></li>
+                <li><a class="nav-link" href="#Regression_analysis">Regression analysis</a></li>
+                <li><a class="nav-link" href="#Decision_tree">Decision tree</a></li>
+                <li><a class="nav-link" href="#Survival_analysis">Survival analysis</a></li>
+                <li><a class="nav-link" href="#Chi_square_tests">Chi square tests</a></li>
+                <li><a class="nav-link" href="Usefull_links">Usefull links</a></li>
+                <li><a class="nav-link" href="Usefull_books">Usefull books</a></li>
+              </ul>
+            </u>
+          </nav>
+        </div>
+        <main>
+          <div class="right">
+            <section class="main-section" id="Audience">
+              <header><h3>Audience</h3></header>
+              <article>
+                <p>
+                  R is a programming language and software environment for statistical analysis, graphics representation and reporting. R was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, and is currently developed by the R Development Core Team.
+    
+    The core of R is an interpreted computer language which allows branching and looping as well as modular programming using functions. R allows integration with the procedures written in the C, C++, .Net, Python or FORTRAN languages for efficiency.
+                  <br>
+                  <br>
+    
+    R is freely available under the GNU General Public License, and pre-compiled binary versions are provided for various operating systems like Linux, Windows and Mac.
+    
+    R is free software distributed under a GNU-style copy left, and an official part of the GNU project called GNU S.
+                </p>
+                <p>
+                  This technical documentation is designed for software programmers, statisticians and data miners who are looking forward to developing statistical software using R programming. If you are trying to understand the R programming language as a beginner, this technical documentation will give you enough understanding on almost all the concepts of the language from where you can take yourself to higher levels of expertise.
+                </p>
+              </article>
+            </section>
+            <section class="main-section" id="Prerequisites">
+              <header><h3>Prerequisites</h3></header>
+              <article>
+                <p>
+                  Before proceeding with this tutorial, you should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the programming languages will help you in understanding the R programming concepts and move fast on the learning track.
+                </p>
+              </article>
+            </section>
+            <section class="main-section" id="Evolution">
+              <header><h3>Evolution</h3></header>
+              <article>
+                <p>
+                  R was initially written by Ross Ihaka and Robert Gentleman at the Department of Statistics of the University of Auckland in Auckland, New Zealand. R made its first appearance in 1993.
+                <ul>
+                  <li>A large group of individuals has contributed to R by sending code and bug reports.</li>
+                  <li>Since mid-1997 there has been a core group (the "R Core Team") who can modify the R source code archive.</li>
+                </ul>
+                </p>
+              </article>
+            </section>
+          <section class="main-section" id="Features">
+            <header><h3>Features</h3></header>
+            <article>
+              <p>
+                R is world’s most widely used statistics programming language. It's the # 1 choice of data scientists and supported by a vibrant and talented community of contributors. R is taught in universities and deployed in mission critical business applications. The most important features of R are the following:
+              <ul>
+                <li>R is a well-developed, simple and effective programming language which includes conditionals, loops, user defined recursive functions and input and output facilities.</li>
+                <li>R is an effective data handling and storage facility.</li>
+                <li>R provides a suite of operators for calculations on arrays, lists, vectors and matrices.</li>
+                <li>R provides a large, coherent and integrated collection of tools for data analysis.</li>
+                <li>R provides graphical facilities for data analysis and display either directly at the computer or printing at the papers.</li>
+              </ul>
+              </p>
+            </article>
+          </section>
+        <section class="main-section" id="Windows_installation">
+          <header><h3>Windows installation</h3></header>
+          <article>
+            <p>
+              <ol>
+                <li>
+              Download the Windows installer version of R from R-3.2.2 for Windows (32/64 bit) and save it in a local directory</li>
+    
+    <li>As it is a Windows installer (.exe) with a name "R-version-win.exe" you can just double click and run the installer accepting the default settings.</li> 
+                <li>If your Windows is 32-bit version, it installs the 32-bit version. But if your windows is 64-bit, then it installs both the 32-bit and 64-bit versions.</li>
+    
+    <li>After installation you can locate the icon to run the Program in a directory structure "R\R3.2.2\bin\i386\Rgui.exe" under the Windows Program Files. Clicking this icon brings up the R-GUI which is the R console to do R Programming.</li>
+            </ol>
+            </p>
+          </article>
+        </section>
+      <section class="main-section" id="Linux_installation">
+        <header><h3>Linux installation</h3></header>
+        <article>
+          <p>
+            R is available as a binary for many <a href="https://cran.r-project.org/bin/linux/">versions</a> of Linux at the location R Binaries.
+            
+    The instruction to install Linux varies from flavor to flavor. These steps are mentioned under each type of Linux version in the mentioned link. However, if you are in a hurry, then you can use yum command to install R as follows:
+            <br>
+            <br>
+            <code>
+              $ yum install R
+            </code>
+            <br>
+            <br>
+            Above command will install core functionality of R programming along with standard packages, still you need additional package, then you can launch R prompt as follows:
+            <br>
+            <br>
+            <code>
+              $ R
+    R version 3.2.0 (2015-04-16) -- "Full of  Ingredients"          
+    Copyright (C) 2015 The R Foundation for Statistical Computing
+    Platform: x86_64-redhat-linux-gnu (64-bit)
+              <br>
+              <br>
+              R is free software and comes with ABSOLUTELY NO WARRANTY.
+    You are welcome to redistribute it under certain conditions.
+    Type 'license()' or 'licence()' for distribution details.
+              <br>
+              <br>
+              R is a collaborative project with many  contributors.                    
+    Type 'contributors()' for more information and
+    'citation()' on how to cite R or R packages in publications.
+              <br>
+              <br>
+    Type 'demo()' for some demos, 'help()' for on-line help, or
+    'help.start()' for an HTML browser interface to help.
+    Type 'q()' to quit R.
+    >  
+            </code>
+            <br>
+            <br>
+            Now you can use install command at R prompt to install the required package. For example, the following command will install plotrix package which is required for 3D charts.
+            <br>
+            <br>
+            <code>
+              > install.packages("plotrix")
+            </code>
+            </p>
+        </article>
+      </section>
+      <section class="main-section" id="Run_R_scripts">
+        <header><h3>Run R scripts</h3></header>
+        <article>
+          <p>
+            As a convention, we will start learning R programming by writing a "Hello, World!" program. Depending on the needs, you can program either at R command prompt or you can use an R script file to write your program. Let's check R Script file.
+          </p>
+          <h5>R Script file</h5>
+          <p>Usually, you will do your programming by writing your programs in script files and then you execute those scripts at your command prompt with the help of R interpreter called Rscript. So let's start with writing following code in a text file called test.R as under −</p>
+         
+          <code style="color:red;">
+            # My first program in R Programming
+          </code>
+          <br>
+          <code>
+            myString
+          </code>
+          <code style="color:grey;"> <- </code>
+            <code style="color:green;">"Hello, World!"</code>
+            <br>
+            <br>
+            <code style="color:blue;">print</code>
+            <code>(myString)</code>
+            <p>
+              Save the above code in a file test.R and execute it at Linux command prompt as given below. Even if you are using Windows or other system, syntax will remain same.
+            </p>
+            <code>$ Rscript test.R 
+    </code>
+            <p>
+              When we run the above program, it produces the following result:
+            </p>
+            <code>
+              [1] "Hello, World!"
+            </code>
+        </article>
+      </section>
+        <section class="main-section" id="Data_stractures">
+          <header><h3>Data stractures</h3><header>
+            <article>
+              <p>
+                Generally, while doing programming in any programming language, you need to use various variables to store various information. Variables are nothing but reserved memory locations to store values. This means that, when you create a variable you reserve some space in memory.
+    
+    You may like to store information of various data types like character, wide character, integer, floating point, double floating point, Boolean etc. Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.
+              </p>
+              <h5>Data types</h5>
+              <p>
+                In contrast to other programming languages like C and java in R, the variables are not declared as some data type. The variables are assigned with R-Objects and the data type of the R-object becomes the data type of the variable. There are many types of R-objects. The frequently used ones are:
+              <ul>
+                <li>Vectors <a href="https://www.tutorialspoint.com/execute_r_online.php">(live demo)</a></li>
+                <li>Lists <a href="https://www.tutorialspoint.com/execute_r_online.php">(live demo)</a></li>
+                <li>Matrices <a href="https://www.tutorialspoint.com/execute_r_online.php">(live demo)</a></li>
+                <li>Arrays <a href="https://www.tutorialspoint.com/execute_r_online.php">(live demo)</a></li>
+                <li>Factors <a href="https://www.tutorialspoint.com/execute_r_online.php">(live demo)</a></li>
+                <li>Data frames <a href="https://www.tutorialspoint.com/execute_r_online.php">(live demo)</a></li>
+              </ul>
+              </p>
+            <h5>Variable assignment</h5>
+            <p>
+              The variables can be assigned values using leftward, rightward and equal to operator. The values of the variables can be printed using <b>print()</b> or <b>cat()</b> function. The <b>cat()</b> function combines multiple items into a continuous print output.
+            </p>
+            <code style="color:red;">
+              # Assignment using equal operator </code>
+            <br>
+            <code style="color:blue;">
+              var.2</code>
+            <code style="color:grey;"> = </code>
+              <code style="color:green;">c("learn","R") </code>
+            <br>
+            <br>
+            <code style="color:blue;">print</code>
+            <code style="color:grey;">(</code>
+            <code style="color:blue;">var.2</code>
+            <code style="color:grey;">)</code>
+            <br>
+            <code>cat</code>
+            <code style="color:grey;">(</code>
+            <code style="color:green;">"var.2 is" </code>
+            <code style="color:grey;">,</code>
+            <code style="color:blue;">var.2</code>
+            <code style="color:grey;">,</code>
+            <code style="color:green;">"\n"</code>
+            <code style="color:grey;">)</code>
+            <p>When we execute the above code, it produces the following results:</p>
+            <code>[1] "learn" "R"
+              <br>
+    var.2 is  learn R 
+            </code>
+            <p>Don't forget to check the<a href="https://www.tutorialspoint.com/execute_r_online.php"> live demo</a> for the:
+            <ol>
+              <li>assignment using leftward operator</li>
+              <li>assignment using rightward operator</li>
+            </ol>
+            </p>
+            <h5>Operator types</h5>
+            <p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. R language is rich in built-in operators and provides the following types of operators:
+            <ul>
+              <li>Arithmetic operators 
+                <img id="arithmeticImg" class="operators-images" src="https://i.imgur.com/WfsJtS9.png" alt="Arithmetic operators in R programming language" style="width:100%;max-width:20px;max-height:8px">
+                (click to view)
+                <div id="modal01" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption01"></div>
+                </div>
+            </li>
+            <li>Relational operators
+              <img id="relationalImg" class="operators-images" src="https://i.imgur.com/hMhrOKK.png" alt="Relational operators in R programming language" style="width:100%;max-width:20px;max-height:8px">
+              (click to view)
+              <div id="modal02" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img02">
+                <div id="caption02"></div>
+              </div>
+            </li>
+            <li>Logical operators
+              <img id="logicalImg" class="operators-images" src="https://i.imgur.com/gUK1GrT.png" alt="Logical operators in R programming language" style="width:100%;max-width:20px;max-height:8px">
+              (click to view)
+              <div id="modal03" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img03">
+                <div id="caption03"></div>
+              </div>
+            </li>
+            <li>Assignment operators
+              <img id="assignmentImg" class="operators-images" src="https://i.imgur.com/gUK1GrT.png" alt="Assignment operators in R programming language" style="width:100%;max-width:20px;max-height:8px">
+              (click to view)
+              <div id="modal04" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img04">
+                <div id="caption04"></div>
+              </div>
+            </li>
+            <li>Miscellaneous operators
+              <img id="miscellaneousImg" class="operators-images" src="https://i.imgur.com/crBbR2u.png" alt="Miscellaneous operators in R programming language" style="width:100%;max-width:20px;max-height:8px">
+              (click to view)
+              <div id="modal05" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img05">
+                <div id="caption05"></div>
+              </div>
+            </li>
+        </ul>
+        </p>
+        </article>
+    </section>
+  <section class="main-section" id="R_functions">
+      <header><h3>R functions</h3><header>
+        <article>
+          <p>
+            A function is a set of statements organized together to perform a specific task. R has a large number of in-built functions and the user can create their own functions.
+
+In R, a function is an object so the R interpreter is able to pass control to the function, along with arguments that may be necessary for the function to accomplish the actions.
+
+The function in turn performs its task and returns control to the interpreter as well as any result which may be stored in other objects.
+            </p>
+          <h5>Function definition</h5>
+          <p>
+            An R function is created by using the keyword function. The basic syntax of an R function definition is as follows: 
+            <br>
+            <br>
+            <code>
+             function_name <- function(arg_1, arg_2, ...) { 
+                              <br>
+              <span style="margin-left: 1em"></span>Function body
+              <br>
+              }
+            </code>
+          </p>
+          <h5>Function components</h5>
+          <p>The different parts of a function are:</p>
+          <ul>
+            <li><b>Function name </b><span>&#8212;</span> This is the actual name of the function. It is stored in R environment as an object with this name.</li>
+            <li><b>Arguments </b><span>&#8212;</span> An argument is a placeholder. When a function is invoked, you pass a value to the argument. Arguments are optional; that is, a function may contain no arguments. Also arguments can have default values.</li>
+            <li><b>Function body </b><span>&#8212;</span> The function body contains a collection of statements that defines what the function does.</li>
+            <li><b>Return value </b><span>&#8212;</span> The return value of a function is the last expression in the function body to be evaluated.</li>
+          </ul>
+          <h5>Function types</h5>
+          <button type="button" class="collapsible">"Built-in" function</button>
+          <div class="content">
+            <p>
+              Built-in functions can be directly called in the program without defining them first.
+              Simple examples of in-built functions are seq(), mean(), max(), sum(x) and paste(...) etc. They are directly called by user written programs.
+              Example:
+            </p>
+            
+              <br>
+              <br>
+              <code style="color:red;">
+                # Create a sequence of numbers from 32 to 44.
+              </code>
+              <br>
+              <code style="color:blue;">
+                print
+              </code>
+              <code>
+                (seq(32,44))
+              </code>
+              <br>
+              <br>
+              The result <span>&#8210;</span>
+              <br>
+              <code>
+                [1] 32 33 34 35 36 37 38 39 40 41 42 43 44
+              </code>
+            <br>
+            <br>
+
+          </div>
+          <button type="button" class="collapsible">"User-defined" function</button>
+          <div class="content">
+            <p>
+              We can also create and use our own functions referred as user defined functions.
+              They are specific to what a user wants and once created they can be used like the built-in functions. Below is an example of how a function is created and used.
+            </p>
+            
+            <code style="color:red;">
+              # Create a function to print squares of numbers in sequence.
+            </code>
+            <br>
+            <code>
+              new.function <- function(a) {
+                              <br>
+              <span style="margin-left: 1em"></span>
+              for(i in 1:a) {
+              <br>
+              <span style="margin-left: 3em"></span>
+                    b <- i^2
+                         <br>
+                            <span style="margin-left: 3em"></span>
+                    print(b)
+              <br>
+                            <span style="margin-left: 1em"></span>
+              }
+              <br>
+              }
+              <br>
+              <br>
+            </code>
+            <code style="color:red;"># Call the function new.function supplying 6 as an argument.
+</code>
+            <br>
+            <code>new.function(6)</code>
+            <br>
+            <br>
+            When we execute the above code, it produces the following result <span>&#8210;</span>
+            <code>
+              <br>
+              [1] 1
+              <br>
+[1] 4
+              <br>
+[1] 9
+              <br>
+[1] 16
+              <br>
+[1] 25
+              <Br>
+[1] 36
+            </code>
+
+          </div>
+        </article>
+    </section>
+  <section class="main-section" id="Data_visualization">
+    <header><h3>Data visualization</h3></header>
+    <article>
+      <p>R Programming language has numerous libraries to create charts and graphs. In the following slideshow you can find the most common of them.</p>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="https://i.imgur.com/SJGa9fN.png" style="width:50%">
+          <div class="text"><a href="https://www.tutorialspoint.com/r/r_pie_charts.htm" target="_blank">How to</a> make a pie chart in R</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="https://i.imgur.com/FhRj1UD.png" style="width:50%">
+          <div class="text"><a href="https://www.tutorialspoint.com/r/r_bar_charts.htm" target="_blank">How to</a> make a bar chart in R</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="https://i.imgur.com/WhjZ3Gs.png" style="width:50%">
+          <div class="text"><a href="https://www.tutorialspoint.com/r/r_boxplots.htm" target="_blank">How to</a> make a boxplot in R</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="https://i.imgur.com/UNICx0s.png" style="width:50%">
+          <div class="text"><a href="https://www.tutorialspoint.com/r/r_histograms.htm" target="_blank">How to</a> make an histogram in R</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="https://i.imgur.com/QfOyr3q.png" style="width:50%">
+          <div class="text"><a href="https://www.tutorialspoint.com/r/r_line_graphs.htm" target="_blank">How to</a> make a line chart in R</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="https://i.imgur.com/81mx5yZ.png" style="width:50%">
+          <div class="text"><a href="https://www.tutorialspoint.com/r/r_scatterplots.htm" target="_blank">How to</a> make a scatterplot in R</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+       </article>
+        </section>
+        <section class="main-section" id="Regression_analysis">
+          <header><h3>Regression analysis</h3></header>
+          <article>
+            <p>
+              Regression analysis is a very widely used statistical tool to establish a relationship model between two variables. One of these variable is called predictor variable whose value is gathered through experiments. The other variable is called response variable whose value is derived from the predictor variable.
+            </p>
+            <table>
+              <tr>
+                <th>Regression type</th>
+                <th>Equation</th>
+                <th>Function(s)</th>
+                <th>Additional info</th>
+              </tr>
+              <tr>
+                <td>Linear regression</td>
+                <td><code>y = ax + b</code></td>
+                <td>lm(), predict()</td>
+                <td><a href="https://www.tutorialspoint.com/r/r_linear_regression.htm">Read more</a></td>
+              </tr>
+              <tr>
+                <td>Multiple regression</td>
+                <td><code>y = a + b1x1 + b2x2 +...bnxn</code></td>
+                <td>lm()</td>
+                <td><a href="https://www.tutorialspoint.com/r/r_multiple_regression.htm">Read more</a></td>
+              </tr>
+              <tr>
+                <td>Logistic regression</td>
+                <td><code>y = 1/(1+e^-(a+b1x1+b2x2+b3x3+...))</code></td>
+                <td>glm()</td>
+                <td><a href="https://www.tutorialspoint.com/r/r_logistic_regression.htm">Read more</a></td>
+              </tr>
+              <tr>
+                <td>Poisson regression</td>
+                <td><code>log(y) = a + b1x1 + b2x2 + bnxn.....</code></td>
+                <td>glm()</td>
+                <td><a href="https://www.tutorialspoint.com/r/r_poisson_regression.htm">Read more</a></td>
+              </tr>
+            </table>
+          </article>
+        </section>
+        <section class="main-section" id="Desicion_tree">
+          <header><h3>Desicion tree</h3></header>
+          <article>
+            <p>
+              Decision tree is a graph to represent choices and their results in form of a tree. The nodes in the graph represent an event or choice and the edges of the graph represent the decision rules or conditions. It is mostly used in Machine Learning and Data Mining applications using R.
+              <br>
+              <br>
+
+Examples of use of decision tress is − predicting an email as spam or not spam, predicting of a tumor is cancerous or predicting a loan as a good or bad credit risk based on the factors in each of these. Generally, a model is created with observed data also called training data. Then a set of validation data is used to verify and improve the model. R has packages which are used to create and visualize decision trees. For new set of predictor variable, we use this model to arrive at a decision on the category (yes/No, spam/not spam) of the data.
+              <br>
+              <br>
+              You can check a playlist of tutotial videos below:
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtyW2y78RYA6opT6tlmcwrCA8oD9p-FG0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+        </section>
+        <section class="main-section" id="Survival_analysis">
+          <header><h3>Survival analysis</h3></header>
+          <article>
+            <p>
+              Survival analysis deals with predicting the time when a specific event is going to occur. It is also known as failure time analysis or analysis of time to death. For example predicting the number of days a person with cancer will survive or predicting the time when a mechanical system is going to fail.
+              <br>
+              <br>
+                          You can check a playlist of tutotial videos below:
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtyW2y78RYA5s9jgsGF7UH8Bnxz4ZTZ9t" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+        </section>
+        <section class="main-section" id="Chi_square_tests">
+          <header><h3>Chi square tests</h3></header>
+          <article>
+            <p>
+              Chi-Square test is a statistical method to determine if two categorical variables have a significant correlation between them. Both those variables should be from same population and they should be categorical like − Yes/No, Male/Female, Red/Green etc.
+              <br>
+              <br>
+For example, we can build a data set with observations on people's ice-cream buying pattern and try to correlate the gender of a person with the flavor of the ice-cream they prefer. If a correlation is found we can plan for appropriate stock of flavors by knowing the number of gender of people visiting.
+              <br>
+              <br>
+               You can check a tutotial video below:
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i-pRb7dNakE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+        </section>
+        <section class="main-section" id="Usefull_links">
+          <header><h3>Usefull links</h3></header>
+          <article>
+            <p>
+            <ul>
+              <li>Official R Software and documentation &#8658; <a href="https://www.r-project.org/" target="_blank">R Project</a></li>
+              <li>R packages for tasks related to a certain topic &#8658; <a href="https://cran.r-project.org/" target="_blank">Task Views</a></li>
+              <li>A Powerful IDE for R Programming &#8658; <a href="https://rstudio.com/" target="_blank">R Studio</a></li>
+            </ul>
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Usefull_books">
+          <header><h3>Usefull books</h3></header>
+          <article>
+            <div class="flex-container">
+              <div><a href="https://www.amazon.com/Art-Programming-Statistical-Software-Design/dp/1593273843" target="_blank"><img src="https://i.imgur.com/tYIcANr.jpg" alt="The art of R programming" style="width:200px;height:300px"></a></div>
+            
+            <div><a href="https://www.amazon.com/exec/obidos/ASIN/1617291560/httpwwwtuto0a-20" target="_blank"><img src="https://i.imgur.com/a9o9qyT.png" alt="Practical data science with R" style="width:200px;height:300px"></a></div>
+            <div><a href="" target="_blank"><img src="https://i.imgur.com/SBfg8j8.jpg" alt="R graphics cookbook" style="width:200px;height:300px"></a></div>
+            </div>
+          </article>
+          </header>
+      </div>
+    </main>
+</article>
+</section>
+<section class="main-section" id="Regression_analysis">
+  <header><h3>Regression analysis</h3></header>
+  <article>
+    <p>
+      Regression analysis is a very widely used statistical tool to establish a relationship model between two variables. One of these variable is called predictor variable whose value is gathered through experiments. The other variable is called response variable whose value is derived from the predictor variable.
+    </p>
+    <table>
+      <tr>
+        <th>Regression type</th>
+        <th>Equation</th>
+        <th>Function(s)</th>
+        <th>Additional info</th>
+      </tr>
+      <tr>
+        <td>Linear regression</td>
+        <td><code>y = ax + b</code></td>
+        <td>lm(), predict()</td>
+        <td><a href="https://www.tutorialspoint.com/r/r_linear_regression.htm">Read more</a></td>
+      </tr>
+      <tr>
+        <td>Multiple regression</td>
+        <td><code>y = a + b1x1 + b2x2 +...bnxn</code></td>
+        <td>lm()</td>
+        <td><a href="https://www.tutorialspoint.com/r/r_multiple_regression.htm">Read more</a></td>
+      </tr>
+      <tr>
+        <td>Logistic regression</td>
+        <td><code>y = 1/(1+e^-(a+b1x1+b2x2+b3x3+...))</code></td>
+        <td>glm()</td>
+        <td><a href="https://www.tutorialspoint.com/r/r_logistic_regression.htm">Read more</a></td>
+      </tr>
+      <tr>
+        <td>Poisson regression</td>
+        <td><code>log(y) = a + b1x1 + b2x2 + bnxn.....</code></td>
+        <td>glm()</td>
+        <td><a href="https://www.tutorialspoint.com/r/r_poisson_regression.htm">Read more</a></td>
+      </tr>
+    </table>
+  </article>
+</section>
+<section class="main-section" id="Desicion_tree">
+  <header><h3>Desicion tree</h3></header>
+  <article>
+    <p>
+      Decision tree is a graph to represent choices and their results in form of a tree. The nodes in the graph represent an event or choice and the edges of the graph represent the decision rules or conditions. It is mostly used in Machine Learning and Data Mining applications using R.
+      <br>
+      <br>
+
+Examples of use of decision tress is − predicting an email as spam or not spam, predicting of a tumor is cancerous or predicting a loan as a good or bad credit risk based on the factors in each of these. Generally, a model is created with observed data also called training data. Then a set of validation data is used to verify and improve the model. R has packages which are used to create and visualize decision trees. For new set of predictor variable, we use this model to arrive at a decision on the category (yes/No, spam/not spam) of the data.
+      <br>
+      <br>
+      You can check a playlist of tutotial videos below:
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtyW2y78RYA6opT6tlmcwrCA8oD9p-FG0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </article>
+</section>
+<section class="main-section" id="Survival_analysis">
+  <header><h3>Survival analysis</h3></header>
+  <article>
+    <p>
+      Survival analysis deals with predicting the time when a specific event is going to occur. It is also known as failure time analysis or analysis of time to death. For example predicting the number of days a person with cancer will survive or predicting the time when a mechanical system is going to fail.
+      <br>
+      <br>
+                  You can check a playlist of tutotial videos below:
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtyW2y78RYA5s9jgsGF7UH8Bnxz4ZTZ9t" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </article>
+</section>
+<section class="main-section" id="Chi_square_tests">
+  <header><h3>Chi square tests</h3></header>
+  <article>
+    <p>
+      Chi-Square test is a statistical method to determine if two categorical variables have a significant correlation between them. Both those variables should be from same population and they should be categorical like − Yes/No, Male/Female, Red/Green etc.
+      <br>
+      <br>
+For example, we can build a data set with observations on people's ice-cream buying pattern and try to correlate the gender of a person with the flavor of the ice-cream they prefer. If a correlation is found we can plan for appropriate stock of flavors by knowing the number of gender of people visiting.
+      <br>
+      <br>
+       You can check a tutotial video below:
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i-pRb7dNakE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </article>
+</section>
+<section class="main-section" id="Usefull_links">
+  <header><h3>Usefull links</h3></header>
+  <article>
+    <p>
+    <ul>
+      <li>Official R Software and documentation &#8658; <a href="https://www.r-project.org/" target="_blank">R Project</a></li>
+      <li>R packages for tasks related to a certain topic &#8658; <a href="https://cran.r-project.org/" target="_blank">Task Views</a></li>
+      <li>A Powerful IDE for R Programming &#8658; <a href="https://rstudio.com/" target="_blank">R Studio</a></li>
+    </ul>
+    </p>
+  </article>
+</section>
+<section class="main-section" id="Usefull_books">
+  <header><h3>Usefull books</h3></header>
+  <article>
+    <div class="flex-container">
+      <div><a href="https://www.amazon.com/Art-Programming-Statistical-Software-Design/dp/1593273843" target="_blank"><img src="https://i.imgur.com/tYIcANr.jpg" alt="The art of R programming" style="width:200px;height:300px"></a></div>
+    
+    <div><a href="https://www.amazon.com/exec/obidos/ASIN/1617291560/httpwwwtuto0a-20" target="_blank"><img src="https://i.imgur.com/a9o9qyT.png" alt="Practical data science with R" style="width:200px;height:300px"></a></div>
+    <div><a href="" target="_blank"><img src="https://i.imgur.com/SBfg8j8.jpg" alt="R graphics cookbook" style="width:200px;height:300px"></a></div>
+    </div>
+  </article>
+  </header>
+</div>
+</main>
+
+</div>
+</div>
+
+    </div>
+  </div>
+
+                <script src="index.js"></script>
+</body>
+</html>
